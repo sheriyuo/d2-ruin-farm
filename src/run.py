@@ -64,7 +64,7 @@ def run():
             need_refresh_checkpoint = False
             continue
 
-        if success_count % 5 == 1 and is_collected == 0:
+        if success_count % 5 == 1 and is_collected == 0 and base_settings.collect:
             open_dim_and_collect()
             is_collected = 1
 
